@@ -1,0 +1,104 @@
+/* Extra large devices (large desktops, 1200px and up)
+No media query for `xl` since this is the default */
+
+.table-div {
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgb(196, 196, 196);
+    display: table;
+    margin: 16px auto;
+}
+
+table#basic_table {
+    border-collapse: collapse;
+}
+
+table#basic_table tr {
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+table#basic_table tr:last-child {
+    border-bottom: none;
+}
+
+table#basic_table tr th {
+    background: #F7F7F7;
+    padding: 24px;
+}
+
+.table-header-cell {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+table#basic_table tr td {
+    padding: 24px;
+}
+
+.sort-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+}
+
+.mobile-div {
+    display: none;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgb(196, 196, 196);
+}
+
+.mobile_title {
+    padding: 8px 16px;
+    background: #F7F7F7;
+}
+
+.mobile_section {
+    display: flex;
+    padding: 8px 16px;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+    .table-div {
+        border-radius: 16px;
+        box-shadow: 0 2px 4px rgb(196, 196, 196);
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    .table-div {
+        border-radius: 12px;
+        box-shadow: 0 1px 2px rgb(196, 196, 196);
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+    .table-div {
+        border-radius: 8px;
+        box-shadow: 0 1px 2px rgb(196, 196, 196);
+    }
+    table#basic_table tr th, table#basic_table tr td {
+        padding: 8px 16px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    .table-div {
+        border-radius: 8px;
+        box-shadow: 0 1px 2px rgb(196, 196, 196);
+    }
+    table#basic_table tr th, table#basic_table tr td {
+        padding: 8px 16px;
+    }
+    .show-session {
+        display: block;
+    }
+    .hide-session {
+        display: none;
+    }
+}

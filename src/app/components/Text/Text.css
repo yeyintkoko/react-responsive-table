@@ -1,0 +1,101 @@
+/* Extra large devices (large desktops, 1200px and up)
+No media query for `xl` since this is the default */
+.select-icon {
+    width: 32px; 
+    height: 32px;
+    margin-right: 24px;
+}
+
+.body-font {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 350;
+    letter-spacing: 0.1;
+}
+
+.header-font {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.section-content {
+    padding-right: 16px;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+    .select-icon {
+        width: 32px; 
+        height: 32px;
+        margin-right: 24px;
+    }
+    .body-font {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 350;
+    }
+    .header-font {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    .select-icon {
+        width: 32px; 
+        height: 32px;
+        margin-right: 24px;
+    }
+    .body-font {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 350;
+    }
+    .header-font {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+    .select-icon {
+        width: 24px; 
+        height: 24px;
+        margin-right: 16px;
+    }
+    .body-font {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 350;
+    }
+    .header-font {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    .select-icon {
+        width: 24px; 
+        height: 24px;
+        margin-right: 16px;
+    }
+    .body-font {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 350;
+    }
+    .header-font {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
